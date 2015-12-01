@@ -56,3 +56,5 @@ gem 'pry', '~> 0.10.3'
 gem 'pry-doc', '~> 0.8.0'
 
 gem 'pry-rails', '~> 0.3.4'
+
+gem 'acts-as-taggable-on', '~> 3.5'

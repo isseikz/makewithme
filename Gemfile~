@@ -51,8 +51,8 @@ gem 'hirb', '~> 0.7.3'
 
 gem 'awesome_print', '~> 1.6', '>= 1.6.1'
 
-gem 'pry'
+gem 'pry', '~> 0.10.3'
 
-gem 'pry-doc'
+gem 'pry-doc', '~> 0.8.0'
 
 gem 'pry-rails', '~> 0.3.4'
