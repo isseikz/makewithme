@@ -1,3 +1,44 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.theme{
+  text-align: center;
+  line-height: 100px;
+}
+.container-fluid{
+  text-align: center;
+}
+.box{
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: rgb(145, 189, 237);
+  &.large{
+    width: 483px;
+    height: 300px;
+  }
+  &.midium{
+    width: 322px;
+    height: 200px;
+  }
+  &.small{
+    width: 242px;
+    height: 150px;
+  }
+  &.bubble{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+  }
+}
+.bubbles{
+  margin: 0 auto;
+  width: 1180px;
+}
+.submit{
+  height: 100px;
+  width: 370px;
+  display: inline-block;
+  vertical-align: top;
+}
