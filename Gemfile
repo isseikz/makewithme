@@ -60,3 +60,7 @@ gem 'pry-rails', '~> 0.3.4'
 gem 'acts-as-taggable-on', '~> 3.5'
 
 gem 'font-awesome-sass-rails', '~> 3.0', '>= 3.0.2.2'
+
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.2'
