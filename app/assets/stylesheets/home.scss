@@ -4,9 +4,13 @@
 $theme: rgb(249, 237, 238);
 
 body{
+  min-width: 1440px;
   margin: 0;
   padding: 0;
-  background-color: rgba(30, 230, 122, 0.6)
+  background-color: rgba(30, 230, 122, 0.6);
+}
+.top-image{
+  width: 100%;
 }
 .jumbotron{
   color: $theme;
@@ -20,6 +24,7 @@ body{
     top: 190px;
     left: 50%;
     margin-left: -500px;
+    text-shadow: 2px 2px 3px #403939;
   }
 }
 .container-fluid{
@@ -49,7 +54,7 @@ body{
     height: 100px;
   }
 }
-.bubbles{
+.wrapper{
   margin: 0 auto;
   width: 1180px;
 }
@@ -88,6 +93,7 @@ body{
   margin-top:0;
   padding-left:110px;
   list-style:none;
+  text-shadow: 2px 2px 3px #403939;
   animation:8s linear 0s normal none infinite change;
   &li {
     line-height:40px;
