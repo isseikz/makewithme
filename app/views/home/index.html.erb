@@ -1,0 +1,130 @@
+
+<div class='content'>
+  <div class='visible'>
+    <ul class="animation-word">
+      <li>the world </li>
+      <li>a plane </li>
+      <li>clothes </li>
+    </ul>
+  </div>
+</div>
+<!--  -->
+<div class="top-image">
+  <%= image_tag('toppagenew.jpg' , class: "img-responsive top-image") %>
+</div>
+
+<div class="container-fluid">
+<div class="jumbotron">
+  <h1 class="theme top">Let's make ____________ with me!</h1>
+</div>
+  <div class="wrapper">
+<!-- 参加募集を始めた時に使うdiv
+  <div class="box large">
+
+  </div>
+  <div class="box large">
+
+  </div>
+  <div class="box midium">
+
+  </div>
+  <div class="box midium">
+
+  </div>
+  <div class="box midium">
+
+  </div>
+  <div class="clearfix"></div>
+-->
+  <h1 class="theme">Share your idea and get future buddies.<small></small></h1>
+  <% @idea_box.each do |idea| %>
+  <div class="box small">
+    <h2 class=""><%= idea.title %></h2><br><h2> @ <%= idea.area %></h2>
+  </div>
+  <% end %>
+  <div class="clearfix"></div>
+
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="submit">
+        <h1>Share your idea!</h1>
+        <%= form_for(@idea, url: home_index_path(@idea), html: {method: "post"}) do |f| %>
+          <%= render "shared/errors", object: @idea %>
+          <%= f.text_field :title, class: "form-control" %>@<%= f.text_field :area, class: "form-control" %>
+          <%= f.submit "BUBBLE", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+      <div class="box bubble">
+
+      </div>
+
+  </div>
+  <div class="clearfix"></div>
+</div>
