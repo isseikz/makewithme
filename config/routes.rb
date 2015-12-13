@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'ideas/index'
+
+  get 'ideas/create'
+
+  get 'ideas/destroy'
+
   root to:"home#index"
   get 'home/index'
 
