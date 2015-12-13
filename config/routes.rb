@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
-  get 'ideas/index'
-
-  get 'ideas/create'
-
-  get 'ideas/destroy'
-
   root to:"home#index"
   resources :home
+  resources :ideas, :only => [:index, :create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -143,7 +143,7 @@ ActiveRecord::Schema.define(version: 20151211123733) do
     t.datetime "updated_at",     null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "user_profiles", force: :cascade do |t|
     t.string   "name"
     t.integer  "speciality_id"
     t.integer  "job_id"
