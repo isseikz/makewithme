@@ -1,0 +1,22 @@
+// Place all the styles related to the ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-space{
+  width: 1px;
+  height: 50px;
+}
+.row{
+  margin: 15px;
+  width: 500px;
+  height: auto;
+  border: 1px solid white;
+  float: left;
+  .idea{
+    width: 480px;
+    min-height: 150px;
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px 3px rgba(13, 12, 12, 0.75);
+  }
+}

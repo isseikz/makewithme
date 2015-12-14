@@ -1,0 +1,38 @@
+<div class="top-space"></div>
+<div class="clearfix">
+
+</div>
+<div class="wrapper">
+  <div class="row">
+    <div class="idea posting">
+      <h2>アイデアを投稿する</h2>
+      <%= form_for @idea do |f| %>
+        <%= render "shared/errors", object: f.object %>
+        <%= f.text_field :title, class: "form-control" %>
+        <%= f.submit "投稿", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+    <h2>新着アイデア</h2>
+    <% @new_ideas.each do |i| %>
+    <div class="idea">
+      <%= i.title %>
+      <%= i.id %>
+      <%= i.created_at %>
+    </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <div class="idea">
+
+    </div>
+    <h2>人気のアイデア</h2>
+    <% @new_ideas.each do |i| %>
+    <div class="idea">
+      <%= i.title %>
+    </div>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="clearfix"></div>
