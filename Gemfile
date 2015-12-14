@@ -50,6 +50,10 @@ group :production do
   gem 'pg', '~> 0.18.4'
 end
 
+gem 'activeadmin', '~> 1.0.0.pre1'
+
+gem 'activeadmin-translate'
+
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
 gem 'hirb', '~> 0.7.3'
@@ -69,3 +73,7 @@ gem 'font-awesome-sass-rails', '~> 3.0', '>= 3.0.2.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.2'
+
+gem 'i18n', '~> 0.7.0'
+
+gem 'devise-i18n', '~> 0.12.1'
