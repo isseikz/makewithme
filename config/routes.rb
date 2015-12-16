@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  get 'dashboards/index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :users
   ActiveAdmin.routes(self)
   root to:"home#index"
   resources :home
   resources :ideas, :only => [:index, :create, :destroy]
+  resources :profiles
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

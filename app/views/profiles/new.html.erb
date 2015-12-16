@@ -1,2 +1,7 @@
 <h1>Profiles#new</h1>
 <p>Find me in app/views/profiles/new.html.erb</p>
+<%= form_for @profile do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :favorite %>
+  <%= f.submit "submit" %>
+<% end %> 
