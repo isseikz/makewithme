@@ -18,7 +18,8 @@ class IdeasController < ApplicationController
 
   def destroy
   end
+  private
   def idea_params
-    params.require(:idea).permit(:title).merge(user_id: current_user.id)
+    params.require(:idea).permit(:title_list).merge(user_id: current_user.id)
   end
 end

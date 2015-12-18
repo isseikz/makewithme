@@ -33,6 +33,6 @@ class ProfilesController < ApplicationController
 
   private
     def profile_params
-      params.require(:profile).permit(:name, :favorite => []).merge(user_id: current_user.id)
+      params.require(:profile).permit(:name, :favorite_list).merge(user_id: current_user.id)
     end
 end
