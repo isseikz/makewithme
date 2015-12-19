@@ -39,7 +39,7 @@
   <h1 class="theme">Share your idea and get future buddies.<small></small></h1>
   <% @idea_box.each do |idea| %>
   <div class="box small">
-    <h2 class=""><%= idea.title %></h2><br><h2> @ <%= idea.area %></h2>
+    <h2 class=""><%= render 'tag_list', tag_list: idea.title_list %></h2>
   </div>
   <% end %>
   <div class="clearfix"></div>
@@ -84,7 +84,7 @@
         <h1>Share your idea!</h1>
         <%= form_for(@idea, url: home_index_path(@idea), html: {method: "post"}) do |f| %>
           <%= render "shared/errors", object: @idea %>
-          <%= f.text_field :title, class: "form-control" %>@<%= f.text_field :area, class: "form-control" %>
+          <%= f.text_field :title_list, class: "form-control" %>@<%= f.text_field :area, class: "form-control" %>
           <%= f.submit "BUBBLE", class: "btn btn-primary" %>
         <% end %>
       </div>
