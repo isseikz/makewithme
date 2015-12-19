@@ -5,17 +5,17 @@
 <div class="wrapper">
   <div class="row">
     <div class="idea posting">
-      <h2>アイデアを投稿する</h2>
+      <h2>アイデアを投稿する(comma)</h2>
       <%= form_for @idea do |f| %>
         <%= render "shared/errors", object: f.object %>
-        <%= f.text_field :title_list, class: "form-control" %>
+        <%= f.text_field :title_list, class: "form-control", "data-role" => "tagsinput" %>
         <%= f.submit "投稿", class: "btn btn-primary" %>
       <% end %>
     </div>
     <h2>新着アイデア</h2>
     <% @new_ideas.each do |i| %>
     <div class="idea">
-      <%= i.title_list %>
+      <%= render 'tag_list', tag_list: i.title_list %>
       <%= i.id %>
       <%= i.created_at %>
     </div>
@@ -28,7 +28,7 @@
     <h2>人気のアイデア</h2>
     <% @new_ideas.each do |i| %>
     <div class="idea">
-      <%= i.title_list %>
+      <%= render 'tag_list', tag_list: i.title_list %>
     </div>
     <% end %>
   </div>
