@@ -3,12 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $theme: rgb(249, 237, 238);
 
-body{
+.home{
   min-width: 1440px;
   margin: 0;
   padding: 0;
   background-color: rgba(30, 230, 122, 0.6);
-}
+
 .top-image{
   width: 100%;
 }
@@ -136,3 +136,5 @@ body{
   85%  {margin-top:-83px;}
   100% {margin-top:0;}
 }
+}
+
