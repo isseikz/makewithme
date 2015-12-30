@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Makewithme</title>
+  <meta name="viewport" content="width=1024">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -47,10 +48,8 @@
   </nav>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-<%= yield %>
-<hr>
-<p class="theme">
-  &copy;2015 MakeWithMe
-</p>
+  <%= yield %>
+  <hr>
+  <p class="theme">&copy;2015 MakeWithMe</p>
 </body>
 </html>
